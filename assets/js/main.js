@@ -5,6 +5,8 @@ const elCanvasHeader = document.querySelector(".canvas_header");
 elBurgerBtn.addEventListener("click", function () {
   elCanvasHeaderBack.classList.add("canvas-header_back--active");
   elCanvasHeader.classList.add("canvas_header--active");
+
+  document.body.style.overflow = "hidden"
 });
 
 elCanvasHeaderBack.addEventListener("click", function (evt) {
@@ -14,7 +16,9 @@ elCanvasHeaderBack.addEventListener("click", function (evt) {
   ) {
     elCanvasHeaderBack.classList.remove("canvas-header_back--active");
     elCanvasHeader.classList.remove("canvas_header--active");
+    document.body.style.overflow = "visible"
   }
+
 });
 
 // If add food = true;
