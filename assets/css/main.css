@@ -418,11 +418,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .famous-food_item {
   width: 360px;
   height: 400px;
+  margin: 20px 0;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -561,8 +563,14 @@ header {
     transform: translateY(-100px);
   }
 }
+/* Index html styles end */
+/* Category html start */
 
+.food-category-box {
+  padding-top: 50px;
+}
 
+/* Category html end */
 /* Media start */
 @media (max-width: 1080px) {
   .hero-img1 {
